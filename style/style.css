@@ -1,0 +1,16 @@
+.btn {
+    border: 5px solid  black;
+    border-radius: 16px;
+    font-size: large;
+    padding: 10px 20px;
+    margin-top: 2px;
+}
+
+.safe {
+    background-color: greenyellow;
+}
+
+.danger {
+    background-color: red;
+    color: white;
+}
