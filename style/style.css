@@ -1,16 +1,68 @@
-.btn {
-    border: 5px solid  black;
-    border-radius: 16px;
-    font-size: large;
-    padding: 10px 20px;
-    margin-top: 2px;
+* {
+    box-sizing: border-box;
 }
-
-.safe {
-    background-color: greenyellow;
+body {
+    font-size: 14px;
 }
-
-.danger {
-    background-color: red;
-    color: white;
+.v2_2 {
+    width: 100%;
+    height: 2247px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.v13_6 {
+    width: 877px;
+    height: 847px;
+    background: url("../images/v13_6.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 192px;
+    left: 520px;
+    border: 10px solid rgba(0,0,0,1);
+    overflow: hidden;
+}
+.v13_7 {
+    width: 877px;
+    height: 847px;
+    background: url("../images/v13_7.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 192px;
+    left: 1598px;
+    border: 10px solid rgba(0,0,0,1);
+    overflow: hidden;
+}
+.v2_6 {
+    width: 308px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 75px;
+    left: 520px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+}
+.v13_2 {
+    width: 105px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 93px;
+    left: 2369px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
 }

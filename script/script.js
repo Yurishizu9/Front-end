@@ -1,8 +1,8 @@
-function Para_danger() {
+function danger() {
     document.getElementById("danger").innerHTML = "☠️ That was the Nuclear button";
 }
 
-function Para_safe() {
+function safe() {
     document.getElementById("safe").innerHTML = "😌 Thank God it's reset";
     
 }
