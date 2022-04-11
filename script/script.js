@@ -1,9 +1,10 @@
-var modal = document.getElementByClassName("about-modal");
-var btn = document.getElementByClassName("about");
-var close = document.getElementById("close");
+let modal = document.getElementsByClassName("about-modal")[0];
+let btn = document.getElementsByClassName("about")[0];
+let close = document.getElementById("close");
+
 
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
 
 close.onclick = function() {
@@ -15,3 +16,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
