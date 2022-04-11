@@ -4,34 +4,22 @@
 	transition: all 0.5s ease-in-out;
     box-sizing: border-box;
     font-family:monospace;
-
 }
 
 html, body {
     margin: 0;
-    
 }
 
 html {
-    /* background-color: brown; */
     height: 100%;
-    /* overflow: auto; */
     display: block;
 }
 
 body {
-    /* background-color: aqua; */
     min-height: 100%;
-
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:0 20px;
-     */
 }
 
 .main {
-    /* background-color:aquamarine; */
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -59,23 +47,14 @@ body {
     backdrop-filter: blur(8px);
     z-index: 1;
     border-top: 2px white solid;
-    /* filter:blur(5px) */
 }
 
 div span {
-    /* background-color: blueviolet; */
     font-weight: bolder ;
 }
-.name {
-    /* background-color: orange; */
-}
 
-.about {
-    /* background-color: pink */
-}
 
 .wrapped-links {
-    /* background-color:chartreuse; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -85,11 +64,9 @@ div span {
 }
 
 .single-link {
-    /* background-color: white; */
     display: block;
     padding: 20px;
     width: 20% /*displays 5 items per row */
-    
 }
 
 div img {
@@ -97,6 +74,10 @@ div img {
     width: 100%;
 }
 
+
+/*
+    modal configutations--------------------------
+ */
 .about-modal {
     display: none; 
     position: fixed; 
@@ -116,7 +97,6 @@ div img {
 }
 
 .modal-text {
-    /* background-color: aqua; */
     display: flex; 
     justify-content: flex-start; 
     align-items: flex-start; 
@@ -153,24 +133,48 @@ div img {
     flex-grow: 0;
     flex-shrink: 0;
     position: relative;
-    gap: 10px;
+    gap: 8px;
     padding: 10px;
     flex-wrap: wrap;
 }
 
 .skill {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 54px;
     height: 15px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
     width: auto;
-    gap: 8px;
+    gap: 4px;
 }
 
+.skill span {
+    /* visibility: hidden; */
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 0 8px;
+    /*   width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; */
+}
 
+.skill img:hover, .skill img:focus + span{ 
+    /* visibility: visible; */
+    display: flex;
+    cursor: pointer;
+}
+
+/* , .skill img:focus  */
+
+/* 
+    diffent screen size changes ------------------
+*/
 @media (max-width: 1420px) {
     .single-link {
         width: 25%;  /*displays 4 items per row */
